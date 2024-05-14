@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iteme Platform</title>
+    <link rel="stylesheet" href="../static/styles/iteme.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <h1 class="logo">Iteme</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Stories</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="camera">
+            <!-- Camera interface goes here -->
+        </section>
+        <section class="stories">
+            <iframe width="315" height="560" src="https://www.youtube.com/embed/video_id_here" frameborder="0"
+                allowfullscreen></iframe>
+            <iframe width="315" height="560" src="https://www.youtube.com/embed/video_id_here" frameborder="0"
+                allowfullscreen></iframe>
+            <iframe width="315" height="560" src="https://www.youtube.com/embed/video_id_here" frameborder="0"
+                allowfullscreen></iframe>
+            <iframe width="315" height="560" src="https://www.youtube.com/embed/video_id_here" frameborder="0"
+                allowfullscreen></iframe>
+            <iframe width="315" height="560" src="https://www.youtube.com/embed/video_id_here" frameborder="0"
+                allowfullscreen></iframe>
+            <iframe width="315" height="560" src="https://www.youtube.com/embed/video_id_here" frameborder="0"
+                allowfullscreen></iframe>
+            <iframe width="315" height="560" src="https://www.youtube.com/embed/video_id_here" frameborder="0"
+                allowfullscreen></iframe>
+
+
+            <!-- Add more iframe elements for additional videos -->
+        </section>
+        <section class="messages">
+            <!-- Messages feed goes here -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Iteme. All rights reserved.</p>
+    </footer>
+
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").classList.add("scrolled");
+            } else {
+                document.getElementById("header").classList.remove("scrolled");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

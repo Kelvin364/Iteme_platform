@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iteme - Login | Sign Up</title>
+  <link rel="stylesheet" href="../static/styles/login.css">
+</head>
+<body>
+
+  <div class="container">
+    <form class="form-container" id="loginForm">
+      <h2>Login</h2>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <p>Not registered? <a href="#" onclick="toggleForm('signupForm')">Sign Up</a></p>
+    </form>
+
+    <form class="form-container" id="signupForm" style="display: none;">
+      <h2>Sign Up</h2>
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="text" id="firstName" placeholder="First Name" required>
+      <input type="text" id="lastName" placeholder="Last Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="password" id="repeatPassword" placeholder="Repeat Password" required>
+      <button type="submit">Sign Up</button>
+      <p>Already registered? <a href="#" onclick="toggleForm('loginForm')">Login</a></p>
+    </form>
+  </div>
+
+  <button id="darkModeToggle" onclick="toggleDarkMode()">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50">
+      <path fill="none" d="M0 0h24v24H0z"/>
+      <path d="M13.65 5.65a7.501 7.501 0 0 0-11.3 9.7 7.501 7.501 0 0 1 11.3-9.7z"/>
+      <path fill-opacity=".3" d="M22 12c0-5.523-4.477-10-10-10v20c5.523 0 10-4.477 10-10z"/>
+    </svg>
+  </button>
+
+  <script>
+    function toggleForm(formId) {
+      var loginForm = document.getElementById('loginForm');
+      var signupForm = document.getElementById('signupForm');
+
+      if (formId === 'loginForm') {
+        loginForm.style.display = 'block';
+        signupForm.style.display = 'none';
+      } else if (formId === 'signupForm') {
+        loginForm.style.display = 'none';
+        signupForm.style.display = 'block';
+      }
+    }
+
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      // Your login form submission logic here
+    });
+
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      // Your sign-up form submission logic here
+    });
+
+    // Dark mode functionality
+    var darkModeEnabled = false;
+    var darkModeToggle = document.getElementById('darkModeToggle');
+
+    function toggleDarkMode() {
+      var body = document.body;
+      body.classList.toggle('dark-mode');
+      darkModeEnabled = !darkModeEnabled;
+
+      // Update icon based on dark mode state
+      if (darkModeEnabled) {
+        darkModeToggle.innerHTML = `
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50">
+            <path fill="none" d="M0 0h24v24H0z"/>
+            <path d="M13.65 5.65a7.501 7.501 0 0 0-11.3 9.7 7.501 7.501 0 0 1 11.3-9.7z"/>
+            <path fill-opacity=".3" d="M22 12c0-5.523-4.477-10-10-10v20c5.523 0 10-4.477 10-10z"/>
+          </svg>
+        `;
+      } else {
+        darkModeToggle.innerHTML = `
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50">
+            <path fill="none" d="M0 0h24v24H0z"/>
+            <path d="M15.41 16.58L13 14.17V16h-2v-4h4v2h1.76l-2.99-2.99L12 9l5 5-5 5-1.41-1.42zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8z"/>
+          </svg>
+        `;
+      }
+    }
+  </script>
+
+</body>
+</html>

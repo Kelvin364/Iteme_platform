@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALX Kigali</title>
+    <link rel="stylesheet" href="../static/styles/landing.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#footer">Team</a></li>
+                <li><a href="#services">Our services</a></li>
+                <li><a href="#footer">Contact us</a></li>
+            </ul>
+        </nav>
+        <section class="header-css">
+            <!-- Image Slider -->
+            <div class="image-slider">
+                <img src="../static/images/convention.jpg" alt="Slide 1">
+                <img src="../static/images/hotel-city-view_1_orig.jpg" alt="Slide 2">
+                <img src="../static/images/kigali-convention-centre-entrance_orig.jpg" alt="Slide 3">
+            </div>
+            <div>
+                <!-- <img src="../static/images/logo.png" alt=""> -->
+                <h1>Iteme</h1>
+                <p>
+                <h3>
+                    Nurturing Your Mind, Empowering Your Future. Welcome to Iteme
+                </h3>
+                <h4>
+                    safe space for open conversations, building resilience, and thriving together
+                </h4>
+                </p>
+            </div>
+            <div class="get-started">
+                <a href="http://127.0.0.1:8001/login" class="button">Get Started</a>
+            </div>
+        </section>
+    </header>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../static/images/convention.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../static/images/hotel-city-view_1_orig.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../static/images/kigali-convention-centre-entrance_orig.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+    <!-- Services Section -->
+    <section class="background" id="services">
+        <div class="card-list">
+            <!-- Card items here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="main-content">
+            <div class="box">
+                <h2>About us</h2>
+                <div class="content">
+                    <p>Welcome to the ALX Kigali Hub Support Website! This platform is designed to empower ALX students
+                        who utilize our Kigali hub by providing them with easy access to a wealth of information,
+                        updates, events, and activities happening at the hub. But that's not all! We also aim to support
+                        our students by offering them essential links to various platforms. Whether you need program
+                        support or wish to report an offense, we've got you covered. Join us in making the most of your
+                        ALX experience. Explore, engage, and excel with the ALX Kigali Hub Support Website! 😊</p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/alxafrica/"><span class="fab fa-facebook-f"></span></a>
+                        <a href="https://twitter.com/alx_africa"><span class="fab fa-twitter"></span></a>
+                        <a href="https://www.instagram.com/alx_africa/"><span class="fab fa-instagram"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Address</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">Deco Center, KG 9 Ave, Kigali, Rwanda</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">+250781 844 106</span>
+                    </div>
+                    <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">kigali@theroom.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Contact us</h2>
+                <div class="content">
+                    <form action="#">
+                        <div class="email">
+                            <div class="text">Email *</div>
+                            <input type="email" required>
+                        </div>
+                        <div class="msg">
+                            <div class="text">Message *</div>
+                            <textarea rows="2" cols="25" required></textarea>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <center>
+                <span class="credit">Created By <a href="https://github.com/elyton250/ALX_Support_Website">Nguweneza
+                        Christian & Elyse Mathieu Nshimyumukiza</a> | </span>
+                <span class="far fa-copyright"></span><span> 2024 All rights reserved.</span>
+            </center>
+        </div>
+    </footer>
+
+    <script>
+        // You can include any JavaScript here if needed
+        // Auto image slider
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.image-slider img');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.style.display = 'block';
+                } else {
+                    slide.style.display = 'none';
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentIndex++;
+            if (currentIndex >= slides.length) {
+                currentIndex = 0;
+            }
+            showSlide(currentIndex);
+        }
+
+        function startSlider() {
+            setInterval(nextSlide, 10000); // Change slide every 3 seconds
+        }
+
+        startSlider();
+
+    </script>
+</body>
+
+</html>
