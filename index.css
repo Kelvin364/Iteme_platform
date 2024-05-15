@@ -12,7 +12,7 @@ body {
 /* styles for section 1 */
 .section-1 {
     /* background-color: #1F2937; */
-    background-image: url(../images/thought-catalog-23KdVfc395A-unsplash.jpg);
+    background-image: url(images/thought-catalog-23KdVfc395A-unsplash.jpg);
     padding-top: 20px;
     width: 100%;
     height: 500px;
@@ -26,15 +26,15 @@ body {
 
 @keyframes change {
     0% {
-        background-image: url(../images/eric-froehling-3fl4xRSOD6k-unsplash.jpg);
+        background-image: url(images/eric-froehling-3fl4xRSOD6k-unsplash.jpg);
     }
 
     50% {
-        background-image: url(../images/thought-catalog-23KdVfc395A-unsplash.jpg);
+        background-image: url(images/thought-catalog-23KdVfc395A-unsplash.jpg);
     }
 
     100% {
-        background-image: url(../images/WhatsApp\ Image\ 2024-05-12\ at\ 9.18.17\ PM.jpeg);
+        background-image: url(images/WhatsApp\ Image\ 2024-05-12\ at\ 9.18.17\ PM.jpeg);
     }
 
     /* 60%
