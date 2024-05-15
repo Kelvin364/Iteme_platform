@@ -1,0 +1,476 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid red; */
+}
+
+body {
+    line-height: 1.5;
+}
+
+/* styles for section 1 */
+.section-1 {
+    /* background-color: #1F2937; */
+    background-image: url(../images/thought-catalog-23KdVfc395A-unsplash.jpg);
+    padding-top: 20px;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change 10s infinite ease-in-out;
+}
+
+@keyframes change {
+    0% {
+        background-image: url(../images/eric-froehling-3fl4xRSOD6k-unsplash.jpg);
+    }
+
+    50% {
+        background-image: url(../images/thought-catalog-23KdVfc395A-unsplash.jpg);
+    }
+
+    100% {
+        background-image: url(../images/WhatsApp\ Image\ 2024-05-12\ at\ 9.18.17\ PM.jpeg);
+    }
+
+    /* 60%
+    {
+        background-image: url(../images/eric-froehling-3fl4xRSOD6k-unsplash.jpg);
+    }
+    80%
+    {
+        background-image: url(../images/thought-catalog-23KdVfc395A-unsplash.jpg);
+    }
+    100%
+    {
+        background-image: url(../images/WhatsApp\ Image\ 2024-05-12\ at\ 9.18.17\ PM.jpeg);
+    } */
+}
+
+.section-1 .menu,
+.sub-menu {
+    display: flex;
+    margin: 0px 100px 0px 100px;
+    justify-content: space-between;
+}
+
+.section-1 .sub-menu {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.menu .header-logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    cursor: pointer;
+    letter-spacing: 5px;
+}
+
+ul {
+    /* padding-bottom: 0px; */
+    /* justify-content: center; */
+    margin-bottom: 5px;
+}
+
+li {
+    list-style: none;
+    display: inline;
+
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #F9FAF8;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.menu ul li a:hover {
+    color: #3882F6;
+}
+
+.sub-menu .web-description .intro {
+    width: 50%
+}
+
+/* .sub-menu .web-description {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+} */
+.sub-menu .web-description h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.sub-menu .web-description p {
+    font-size: 25px;
+    color: white;
+    padding-right: 50px;
+}
+
+.sub-menu .sign-btn {
+    background-color: #3882F6;
+    border-radius: 5px;
+    border: none;
+    color: #F9FAF8;
+    font-size: 20px;
+    padding: 10px 25px 10px 25px;
+    margin-top: 15px;
+}
+
+.sub-menu .sign-btn:hover {
+    border: 1px solid #3882F6;
+    color: #3882F6;
+    background-color: #E5E7EB;
+}
+
+.sub-menu .img-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* styles for section 2 */
+.section-2 {
+    background-color: #FFF;
+}
+
+.section-2 .flex-container {
+    margin: 0px 100px;
+}
+
+.section-2 .flex-container div {
+    width: 350px;
+    height: 500px;
+}
+
+.section-2 h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    padding: 30px 0px 30px 0px;
+}
+
+.section-2 .flex-container img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    /* border: 5px solid #3882F6; */
+    /* border-radius: 10px; */
+}
+
+.section-2 .flex-container p {
+    /* background-color: #1F2937; */
+    color: #1F2937;
+    /* border-radius: 5px; */
+    /* padding: 5px; */
+}
+
+/* .section-2 .flex-container img:hover {
+    border: 5px solid #1F2937;
+} */
+.section-2 .flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.section-2 .flex-container p,
+h4 {
+    text-align: center;
+    padding: 5px 0;
+    /* color: ; */
+}
+
+/* styles for section 3 */
+.section-3 {
+    margin-top: 100px;
+    background-color: #1F2937;
+    padding: 50px 0 100px 0;
+    color: #E5E7EB;
+}
+
+.section-3 .quote {
+    margin: 0 100px;
+}
+
+.section-3 .quote p {
+    font-size: 34px;
+    font-style: italic;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.section-3 h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bolder;
+    padding: 15px 0px 30px 0px;
+}
+
+.fade-in-about {
+    /* font-family: Arial; */
+    font-size: 30px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* styles for section 4 */
+.section-4 {
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+.section-4 .call-action {
+    margin: 100px 100px;
+    background-color: #3882F6;
+    border-radius: 10px;
+    padding: 25px 100px;
+}
+
+.section-4 .call-action h1 {
+    color: #F9FAF8;
+}
+
+.section-4 .call-action p {
+    color: #E5E7EB;
+}
+
+.section-4 .call-action .call-action-flex button {
+    color: #F9FAF8;
+    background-color: #3882F6;
+    border: 2px solid #F9FAF8;
+    border-radius: 5px;
+    padding: 5px 20px 5px 20px;
+    font-size: 18px;
+}
+
+.section-4 .call-action .call-action-flex button:hover {
+    border: 2px solid #1F2937;
+    color: #1F2937;
+}
+
+/* contact us form */
+.section-4 .call-action .call-action-flex .content {
+    width: 300px;
+    color: white;
+}
+
+.section-4 .call-action .call-action-flex .content input {
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    width: 300px;
+}
+
+.section-4 .call-action .call-action-flex .content textarea {
+    width: 300px;
+    padding: 10px;
+}
+
+/* styles for section 5 */
+.section-5 {
+    background-color: #1F2937;
+}
+
+.section-5 .footer-content {
+    margin: 0px 100px;
+    padding: 40px 0;
+}
+
+.section-5 .footer-content p {
+    color: #E5E7EB;
+    text-align: center;
+}
+
+/* styles for section 6 */
+.section-6 {
+    padding: 25px 100px;
+    background-color: rgb(245, 240, 240);
+    text-align: center;
+}
+
+.section-6 h1 {
+    color: #1F2937;
+}
+
+.section-6 .team-mate {
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.section-6 .team-mate img {
+    width: 100%;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.section-6 .team-mate .name,
+.duty {
+    color: #1F2937;
+    padding: 15px 0;
+}
+
+.section-6 .team-mate .duty {
+    font-weight: 600;
+}
+
+.section-6 .team {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-6 .team .team-mate:hover {
+    background-color: rgb(223, 218, 218);
+    border-radius: 5px;
+}
+
+/* styles for section 7 */
+.section-7 {
+    text-align: center;
+    margin: 25px 100px;
+}
+
+h1 {
+    font-size: 2.5em;
+    /* Increase font size for the heading */
+    margin-bottom: 20px;
+    /* Add some space below the heading */
+}
+
+.item-container {
+    display: flex;
+    /* Make the item containers display in a row */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line on smaller screens */
+    justify-content: space-between;
+    /* Distribute items evenly with space between */
+    margin: 0 auto;
+    /* Center the item container horizontally */
+}
+
+.item {
+    background-color: #f5f5f5;
+    /* Light gray background for each item */
+    margin: 10px;
+    /* Add some margin between items */
+    padding: 20px;
+    /* Add padding inside each item */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow effect */
+    border-radius: 5px;
+    /* Rounded corners for a softer look */
+    width: calc(30% - 20px);
+    /* Set item width considering margins */
+    text-align: left;
+    /* Align content within each item to the left */
+    transition: all 0.2s ease-in-out;
+    /* Smooth transition on hover effect */
+}
+
+.item:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge item on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Increase shadow on hover */
+}
+
+.item h3 {
+    font-size: 1.5em;
+    /* Set a good size for item titles */
+    margin-bottom: 10px;
+    /* Add space below the title */
+}
+
+.item img {
+    width: 100%;
+    /* Set images to take up the full item width */
+    margin-bottom: 10px;
+    /* Add some space between images */
+}
+
+.item p {
+    font-size: 14px;
+    /* Set paragraph font size */
+    line-height: 1.5;
+    /* Increase line-height for better readability */
+}
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+    .item-container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+  
+    .item {
+      width: 100%; /* Make items full width on smaller screens */
+    }
+  }
