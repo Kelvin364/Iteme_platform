@@ -429,7 +429,7 @@ h1 {
     /* Subtle shadow effect */
     border-radius: 5px;
     /* Rounded corners for a softer look */
-    width: calc(25% - 20px);
+    width: calc(30% - 20px);
     /* Set item width considering margins */
     text-align: left;
     /* Align content within each item to the left */
