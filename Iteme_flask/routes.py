@@ -20,7 +20,7 @@ def load_user(user_id):
 """ route for landing page"""
 @main.route('/', strict_slashes=False)
 def home():
-    return render_template('landing.html')
+    return render_template('landing-page.html')
 
 """ routes for dashboard """
 @main.route('/stories', strict_slashes=False)
@@ -28,6 +28,13 @@ def home():
 def dashboard():
     # name = current_user.f_name + ' ' + current_user.l_name  
     return render_template('iteme.html')
+
+
+# @main.route('/projects', strict_slashes=False)
+# # @login_required
+# def project():
+#     # name = current_user.f_name + ' ' + current_user.l_name  
+#     return render_template('projects.html')
 
 # @main.route('/findpeer', strict_slashes=False)
 # @login_required
